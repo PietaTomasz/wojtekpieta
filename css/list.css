@@ -1,0 +1,44 @@
+.list {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 5px;    
+    margin-bottom: 5px;
+    width: 200px;
+}
+.active, .list:hover {
+    background-color: #ccc;
+}
+.list:after {
+    content: '\002B';
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2212";
+}
+.panel {
+    background-color: #777777;
+    color: black;
+    display: none;
+    overflow: hidden;
+    
+}
+.main {    
+    height: 120vh;
+}
+@media (max-width: 578px) {
+    .main {    
+        height: 200vh;
+    }
+    }
+.col-sm-12{
+    position: absolute;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+button{
+    width: 300px;
+}

@@ -1,6 +1,6 @@
 let current = 0;
 let slides = document.querySelectorAll(".slide");
-let interval = setInterval(nextSlide,2500);
+let interval = setInterval(nextSlide,3000);
 
 function nextSlide(){
   slides[current].className = "slide";
